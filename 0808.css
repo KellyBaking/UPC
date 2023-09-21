@@ -1,0 +1,162 @@
+* {
+  position: relative;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "Preahvihear", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.all {
+  width: 100%;
+  height: 100%;
+  font-size: 0px;
+}
+.all .svg {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+}
+.all .left {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #D4E2D4;
+}
+.all .left .title {
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.all .left li {
+  list-style: none;
+  text-indent: 1em;
+  cursor: pointer;
+  padding: 5px;
+}
+.all .left li:hover {
+  opacity: 0.3;
+}
+.all .right {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  min-width: 680px;
+}
+.all .right .top {
+  width: 100%;
+  height: 15%;
+  padding: 20px 10px;
+  font-size: 20px;
+  background-color: rgba(255, 202, 204, 0.7);
+}
+.all .right .bottom {
+  width: 100%;
+  height: 85%;
+  background-color: #FAF3F0;
+  overflow: scroll;
+}
+.all .right .bottom textarea {
+  width: 30%;
+  height: 80%;
+  resize: none;
+  top: 10px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.all .right .bottom button {
+  width: 75px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 83%;
+  left: 17%;
+  border-radius: 50%;
+  font-size: 15px;
+  transition-duration: 0.3s;
+}
+.all .right .bottom button:hover {
+  background-color: black;
+  color: #fff;
+}
+.all .right .bottom ul {
+  position: absolute;
+  top: 20px;
+  left: 36%;
+  padding: 0px;
+}
+.all .right .bottom li.btmli {
+  background-color: #DBC4F0;
+}
+.all .right .bottom li {
+  font-size: 16px;
+  list-style: none;
+  background-color: rgba(219, 196, 240, 0.5);
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+.all .right .bottom li .name, .all .right .bottom li .barcode, .all .right .bottom li .icon {
+  display: inline-block;
+  padding: 5px;
+}
+.all .right .bottom li .name {
+  width: 250px;
+}
+.all .right .bottom li .barcode {
+  width: 180px;
+}
+.all .right .bottom li .icon {
+  width: 100px;
+}
+.all .right .bottom li .click {
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+.all .right .bottom li .click:hover {
+  opacity: 0.5;
+}
+.all .right .bottom li.dupli {
+  background-color: #ffe3bf;
+}
+.all .right .bottom ul.ullist {
+  left: 2%;
+}
+.all .right .bottom ul.ullist li {
+  background-color: transparent;
+  border-bottom: solid 3px #DBC4F0;
+  border-radius: 0px;
+}
+
+.allgrey {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  z-index: 5;
+  position: fixed;
+  top: 0%;
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .all .left {
+    display: none;
+  }
+  .all .right {
+    width: 100%;
+  }
+  .all .right .bottom button {
+    left: 15%;
+  }
+}/*# sourceMappingURL=0808.css.map */
